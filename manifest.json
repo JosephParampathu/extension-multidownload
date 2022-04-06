@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Multidownload Extension",
+  "description": "Downloads multiple links at one time",
+  "version": "1.0.0",
+  "icons": {"128": "icon_128.png"},
+  "options_page": "options.html",
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "tabs", "storage", "downloads", "scripting", "debugger"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
